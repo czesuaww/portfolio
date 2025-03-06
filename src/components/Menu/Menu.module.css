@@ -1,0 +1,32 @@
+.menu {
+  background-color: var(--main-color);
+  padding: 50px 0;
+  width: 100%;
+}
+
+.ulList {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+  padding-right: 60px;
+  z-index: 1111;
+}
+
+.liElement {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 2rem;
+  transition: 0.5s;
+  border: none;
+  padding: 10px 20px;
+}
+
+.liElement:hover {
+  color: var(--orange-color);
+}
+
+.left {
+  left: 0;
+}

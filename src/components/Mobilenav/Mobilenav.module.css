@@ -1,0 +1,50 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  transition: left 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+
+.ulList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+  width: 100%;
+}
+
+.liElement {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 2rem;
+  transition: 0.5s;
+  border: none;
+  padding: 10px 20px;
+}
+
+.liElement:hover {
+  color: var(--orange-color);
+}
+
+.visible {
+  left: 0;
+}
+
+.hidden {
+  left: -200px;
+}
